@@ -4,13 +4,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.*;
 
 @RestController
 public class RoomController {
-    static Map<Integer, Room> reservations = new HashMap();
+    static Map<Integer, Room> reservations = new HashMap<Integer, Room>();
     public RoomController(){
         Room res = new Room();
         res.setRoomNum(603);
